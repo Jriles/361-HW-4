@@ -8,7 +8,7 @@ import java.util.Set;
  * @author alchambers
  */
 public interface GraphIfc<V> {
-
+	HashMap<V, List<V>> graphObject = new HashMap<V, <V>>();
 	// hi
 	public static void main(String[] args) {
 		System.out.println("called main!");
@@ -29,7 +29,9 @@ public interface GraphIfc<V> {
 	 * 
 	 * @return The number of edges in the graph
 	 */
-	public int numEdges();
+	public int numEdges(){
+
+	}
 	/**
 	 * Removes all vertices from the graph
 	 */
