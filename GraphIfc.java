@@ -55,7 +55,11 @@ public interface GraphIfc<V> {
 	 * 
 	 * @param v The vertex to be added
 	 */
-	public void addVertex(V v);
+	public void addVertex(V v){
+		//new list
+		List<v> newConnections = new List<v>();
+		graphObject.put(v, newConnections);
+	}
 
 	/**
 	 * Adds an edge between vertices u and v in the graph.
