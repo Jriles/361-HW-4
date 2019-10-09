@@ -1,3 +1,3 @@
-public class Graph implements GraphIfc {
+public class Graph<V> implements GraphIfc<V> {
 
 }
