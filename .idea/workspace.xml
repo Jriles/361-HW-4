@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e00989a-359e-4100-b2da-ad64a4ca65ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GraphIfc.java" beforeDir="false" afterPath="$PROJECT_DIR$/GraphIfc.java" afterDir="false" />
-    </list>
+    <list default="true" id="5e00989a-359e-4100-b2da-ad64a4ca65ff" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GraphIfc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="60" column="43" lean-forward="true" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+            <state relative-caret-position="170">
+              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#875#876#0" expanded="true" />
@@ -72,7 +70,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570661333872" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570662562692" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -100,12 +98,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570648674435</updated>
-      <workItem from="1570648676095" duration="6696000" />
+      <workItem from="1570648676095" duration="7629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6696000" />
+    <option name="totallyTimeSpent" value="7629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1653" height="896" extended-state="6" />
@@ -148,10 +146,13 @@
     <entry file="file://$PROJECT_DIR$/Vertex.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Main.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/GraphIfc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="60" column="43" lean-forward="true" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+        <state relative-caret-position="170">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#875#876#0" expanded="true" />
