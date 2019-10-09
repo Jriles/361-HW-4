@@ -10,11 +10,6 @@ import java.util.Set;
 public interface GraphIfc<V> {
 	Map<V, List<V>> graphObject = new HashMap<V, <V>>();
 
-	public static void main(String[] args) {
-		System.out.println("called main!");
-		// how to initialize
-	}
-
 	/**
 	 * Returns the number of vertices in the graph
 	 * 
