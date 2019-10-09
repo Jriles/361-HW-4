@@ -9,7 +9,7 @@ import java.util.Set;
  */
 public interface GraphIfc<V> {
 
-	// hello
+	// hi
 	public static void main(String[] args) {
 		System.out.println("called main!");
 		// how to initialize
