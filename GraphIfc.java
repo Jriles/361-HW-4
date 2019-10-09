@@ -8,7 +8,7 @@ import java.util.Set;
  * @author alchambers
  */
 public interface GraphIfc<V> {
-	HashMap<V, List<V>> graphObject = new HashMap<V, <V>>();
+	Map<V, List<V>> graphObject = new HashMap<V, <V>>();
 	// hi
 	public static void main(String[] args) {
 		System.out.println("called main!");
@@ -72,7 +72,14 @@ public interface GraphIfc<V> {
 	 * 
 	 * @return A set containing all vertices in the graph
 	 */
-	public Set<V> getVertices();
+	public Set<V> getVertices(){
+		//go through the hashmap and add each vertex to the Set.
+		Set<V> hash_Set = new HashSet<V>();
+		for(Map.Entry<V, List<V>> entry : graphObject.entrySet()) {
+			hash_Set.add(entry.getKey());
+		}
+		return hash_Set;
+	}
 
 	/**
 	 * Returns the neighbors of v in the graph. A neighbor is a vertex that is
