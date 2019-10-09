@@ -9,7 +9,7 @@ import java.util.Set;
  */
 public interface GraphIfc<V> {
 	Map<V, List<V>> graphObject = new HashMap<V, <V>>();
-	// hi
+
 	public static void main(String[] args) {
 		System.out.println("called main!");
 		// how to initialize
@@ -41,6 +41,7 @@ public interface GraphIfc<V> {
 		}
 		return edgeCount = bigCount/2;
 	}
+
 	/**
 	 * Removes all vertices from the graph
 	 */
