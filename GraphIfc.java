@@ -46,6 +46,7 @@ public interface GraphIfc<V> {
 	 */
 	public void clear(){
 		//we can just clear the outer map and we're covered here
+		graphObject.clear();
 	}
 
 	/**
