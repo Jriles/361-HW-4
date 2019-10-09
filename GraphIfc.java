@@ -21,7 +21,7 @@ public interface GraphIfc<V> {
 	 * @return The number of vertices in the graph
 	 */
 	public int numVertices(){
-		return graphObject.size()
+		return graphObject.size();
 	}
 
 	/**
