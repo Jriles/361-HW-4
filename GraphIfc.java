@@ -5,8 +5,13 @@ import java.util.Set;
  * An interface describing a Graph object. The graph can be either directed or undirected.
  * @author alchambers
  */
-public interface GraphIfc<V> {	
-		
+public interface GraphIfc<V> {
+
+
+	public static void main(String[] args){
+		System.out.println("called main!");
+		//how to initialize
+	}
 	/**
 	 * Returns the number of vertices in the graph
 	 * @return The number of vertices in the graph
