@@ -34,17 +34,19 @@ public interface GraphIfc<V> {
 		//lists hold each vertex's connections to other verticies. Each connection is represented twice however since each vertex is showing all of their connections,
 		//not just one's that have not been represented before. Therefore we should have double the number of connections that actually exist but because we are recording
 		//edges not connections, we divide by 2.
-		int bigCount = 0;
+		int edgeCount = 0;
 		for(Map.Entry<String, HashMap> entry : graphObject.entrySet()) {
 			List value = entry.getValue();
-			bigcount += value.size();
+			edgecount += value.size();
 		}
-		return bigCount = bigCount/2;
+		return edgeCount = bigCount/2;
 	}
 	/**
 	 * Removes all vertices from the graph
 	 */
-	public void clear();
+	public void clear(){
+		//we can just clear the outer map and we're covered here
+	}
 
 	/**
 	 * Adds a vertex to the graph. This method has no effect if the vertex already
