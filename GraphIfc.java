@@ -30,7 +30,16 @@ public interface GraphIfc<V> {
 	 * @return The number of edges in the graph
 	 */
 	public int numEdges(){
-
+		//NOT TESTED
+		//lists hold each vertex's connections to other verticies. Each connection is represented twice however since each vertex is showing all of their connections,
+		//not just one's that have not been represented before. Therefore we should have double the number of connections that actually exist but because we are recording
+		//edges not connections, we divide by 2.
+		int bigCount = 0;
+		for(Map.Entry<String, HashMap> entry : graphObject.entrySet()) {
+			List value = entry.getValue();
+			bigcount += value.size();
+		}
+		return bigCount = bigCount/2;
 	}
 	/**
 	 * Removes all vertices from the graph
