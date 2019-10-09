@@ -3,36 +3,46 @@ import java.util.Set;
 
 /**
  * An interface describing a Graph object. The graph can be either directed or undirected.
- * author alchambers
+ * @author alchambers
  */
 public interface GraphIfc<V> {	
 		
 	/**
-	 * 
-	 *  * @return The number of vertices in the graph
+	 * Returns the number of vertices in the graph
+	 * @return The number of vertices in the graph
 	 */
-	public int numVertices();
-
+	public int numVertices();	
+		
 	/**
 	 * Returns the number of edges in the graph
 
 	 * @return The number of edges in the graph
-	 *
-
+	 */
+	public int numEdges();	
+	
 	/**
-	*
-
-	Removes all
-	vertices from
-	the graph*/
-
-	public int numEdges();
-
-	public void clear();		
-
-
+	 * Removes all vertices from the graph
+	 */
+	public void clear();	
+		
+	/** 
+	 * Adds a vertex to the graph. This method has no effect if the vertex already exists in the graph. 
+	 * @param v The vertex to be added
+	 */
 	public void addVertex(V v);	
 	
+	/**
+	 * Adds an edge between vertices u and v in the graph. 
+	 * @param u A vertex in the graph
+	 * @param v A vertex in the graph
+	 * @throws IllegalArgumentException if either vertex does not occur in the graph.
+	 */
+	public void addEdge(V u, V v);	
+
+	/**
+	 * Returns the set of all vertices in the graph.
+	 * @return A set containing all vertices in the graph
+	 */
 
 	public Set<V> getVertices();
 	
@@ -40,20 +50,11 @@ public interface GraphIfc<V> {
 	 * Returns the neighbors of v in the graph. A neighbor is a vertex that is connected to
 	 * v by an edge. If the graph is directed, this returns the vertices u for which an 
 	 * edge (v, u) exists.
-	 * 
-
-		 * @param v An existing n
-
-		 * @ret
-	rn All n*
-	@thro
-	s IllegalArgument
-	xcepti
-	n if te vertex does 
-	*/
-	
-
-	
+	 *  
+	 * @param v An existing node in the graph
+	 * @return All neighbors of v in the graph.
+	 * @throws IllegalArgumentException if the vertex does not occur in the graph
+	 */
 	public List<V> getNeighbors(V v);	
 
 	/**
