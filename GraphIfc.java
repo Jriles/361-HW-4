@@ -3,26 +3,31 @@ import java.util.Set;
 
 /**
  * An interface describing a Graph object. The graph can be either directed or undirected.
- * @author alchambers
+ * @authors Jack Riley and Jiman Kim
+ *
  */
 public interface GraphIfc<V> {
 
+	private Map<V, List<V>> graphObject = new HashMap<V, List<V>>();
 
 	public static void main(String[] args){
 		System.out.println("called main!");
 		//how to initialize
+
 	}
 	/**
 	 * Returns the number of vertices in the graph
 	 * @return The number of vertices in the graph
 	 */
-	public int numVertices();	
+	public int numVertices(){
+		return graphObject.size()
+	}
 		
 	/**
 	 * Returns the number of edges in the graph
 	 * @return The number of edges in the graph
 	 */
-	public int numEdges();	
+	public int numEdges()
 	
 	/**
 	 * Removes all vertices from the graph
