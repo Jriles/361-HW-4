@@ -2,113 +2,79 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * An interface describing a Graph object. The graph can be either directed or
- * 
- * 
- * undirected.
- * 
- * @author alchambers
-
-	ubl
-	 * 
-
+ * An interface describing a Graph object. The graph can be either directed or undirected.
+ * author alchambers
+ */
+public interface GraphIfc<V> {	
+		
 	/**
-
 	 * 
-	 * @return The number of vertices in the graph
-	 * 
-	 *  pu
-	 ic int numVertices()
-	// 	return graphObject.si
+	 *  * @return The number of vertices in the graph
+	 */
+	public int numVertices();
 
-	
 	/**
 	 * Returns the number of edges in the graph
+	 * @return The number of edges in the graph
+	 *  public int numEdges();	
+	
+	/**
+	*
+
+	Removes all
+	vertices from
+	the graph*/
+
+	public void clear();		
+						 **  *
+						 * dds a vertex to the graph. This m  *
+						 /
+	public void addVertex(V v);	
+	
+	/**
+
+	 * @param 
+
+	* @re
+	urn Aset co
+	taining all vertics in
+	the graph
+	
+	*/
+	public Set<V> getVertices();
+	
+	/**
+	 * Returns the neighbors of v in the graph. A neighbor is a vertex that is connected to
+	 * v by an edge. If the graph is directed, this returns the vertices u for which an 
+	 * edge (v, u) exists.
 	 * 
 
-	 */
-	 * pu ic int numEdges()
-	 *  // //NOT TESTED //
-	 //lists hold each vertex's connections to other verticies. Each connection is represented twice however since each vertex is showing all of their connections,
-	// 	//not just one's that have
-	//
-	// 	int edgeCount = 0;
-	// for(Map.Entry<String, HashMap> entry : graphObject.en
-	// 	List value = entry.getValue();
-	// 	edgecount += value.size();
-	// }
-	// 
-	// return edgeCount = bigCount/2;
-	// }
+		 * @param v An existing n
+
+		 * @ret
+	rn All n*
+	@thro
+	s IllegalArgument
+	xcepti
+	n if te vertex does 
+	*/
+	
+
+	
+	public List<V> getNeighbors(V v);	
 
 	/**
-	 * Removes all vertices from the graph
-	 * 
-	 *  	public void clear()
-	 *          
-	 *          
-	 * 
-	 * exists in the graph.
-	 * 
-	 * @param v The vertex to be added
-	 */
-	public void addVertex(V v){
-
-		List<v> newConnections = new List<v>();
-		graphObject.put(v, newConnections);
-	 *  
-	 
-	/**
-	 * Adds an edge between vertices u and v in the graph.
-	 * 
-	 * @param u A vertex in the graph
-
-	 * @throws IllegalArgumentException if either vertex does not occur in the
-	 *                                  graph.
-	 */
-	 u 
-	 * lic void addEdge(V u, V v);
-
-	/**
-	 * Returns the set of all vertices in the graph.
-	 * 
-	 * @return A set containing all vertices in the graph
-	 */
-	public Set<V> getVertices(){
-		//go through the hashmap and add each vertex to the Set.
-	 *  t<V> ha
-	 f 
-	 * r(Map.Entry<V, List<V>> entry : graphObject.entrySet()) {
-			hash_Set.add(entry.getKey());
-		}
-		return hash_Set;
-	}
-
-	/**
-	 * Returns the neighbors of v in the graph. A neighbor is a vertex that is
-	 *  connected to v by an edge. If th
-	 * 
-	 * vertices u for which an edge (v, u) exists.
-	 * 
-	 * @param v An existing n
-
-	 * @throws IllegalArgumentException if the vertex does not occur in the graph
-	 */
-	public List<V> getNeighbors(V v);
-
-	/**
-	 * Determines whether the given vertex is already contained in the graph. The
-	 * comparison is based on the <code>equals()</code> method in the class V.
+	 * Determines whether the given vertex is already contained in the graph. The comparison
+	 * is based on the <code>equals()</code> method in the class V. 
 	 * 
 	 * @param v The vertex to be tested.
 	 * @return True if v exists in the graph, false otherwise.
 	 */
 	public boolean containsVertex(V v);
-
+	
 	/**
 	 * Determines whether an edge exists between two vertices. In a directed graph,
-	 * this returns true only if the edge starts at v and ends at u.
-	 * 
+	 * this returns true only if the edge starts at v and ends at u. 
 	 * @param v A node in the graph
 	 * @param u A node in the graph
 	 * @return True if an edge exists between the two vertices
@@ -117,21 +83,19 @@ import java.util.Set;
 	public boolean edgeExists(V v, V u);
 
 	/**
-	 * Returns the degree of the vertex. In a directed graph, this returns the
-	 * outdegree of the vertex.
-	 * 
+	 * Returns the degree of the vertex. In a directed graph, this returns the outdegree of the
+	 * vertex. 
 	 * @param v A vertex in the graph
 	 * @return The degree of the vertex
 	 * @throws IllegalArgumentException if the vertex does not occur in the graph
 	 */
 	public int degree(V v);
-
+	
 	/**
-	 * Returns a string representation of the graph. The string representation shows
-	 * all vertices and edges in the graph.
-	 * 
+	 * Returns a string representation of the graph. The string representation shows all
+	 * vertices and edges in the graph. 
 	 * @return A string representation of the graph
 	 */
 	public String toString();
-
+	
 }
