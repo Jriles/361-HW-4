@@ -14,12 +14,13 @@ public class Main {
         Graph<Integer> g = new Graph<Integer>();
         g.addVertex(2);
         g.addVertex(5);
+        g.addEdge(2, 5);
         g.printMap();
 
-        Graph<String> newGraph = new Graph<String>();
-        String myString = "Yeet";
-        newGraph.addVertex(myString);
-        // newGraph.clear();
-        System.out.print(newGraph.getVertices().toString());
+        // Graph<String> newGraph = new Graph<String>();
+        // String myString = "Yeet";
+        // newGraph.addVertex(myString);
+        // // newGraph.clear();
+        // System.out.print(newGraph.getVertices().toString());
     }
 }

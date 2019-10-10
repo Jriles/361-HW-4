@@ -60,7 +60,7 @@ public class Graph<V> implements GraphIfc<V> {
      *                                  graph.
      */
     public void addEdge(V u, V v) {
-
+        graphObject.get(u).add(v);
     }
 
     /**
