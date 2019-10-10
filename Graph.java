@@ -67,7 +67,7 @@ public class Graph<V> implements GraphIfc<V> {
      */
     public void addEdge(V u, V v) {
         if (!containsVertex(u) || !containsVertex(v)) {
-            throw IllegalArgumentException;
+            throw new IllegalArgumentException();
         } else {
             graphObject.get(u).add(v);
         }
@@ -127,7 +127,16 @@ public class Graph<V> implements GraphIfc<V> {
      * @throws IllegalArgumentException if either vertex does not occur in the graph
      */
     public boolean edgeExists(V v, V u) {
-        return true;
+        if (!containsVertex(u) || !containsVertex(v)) {
+            throw new IllegalArgumentException();
+        } else {
+            if (graphObject.get(v).contains(u)) {
+                System.out.println("true");
+                return true;
+            }
+        }
+        System.out.println("false");
+        return false;
     }
 
     /**
@@ -153,6 +162,7 @@ public class Graph<V> implements GraphIfc<V> {
     }
 
     public void printMap() {
-        graphObject.forEach((key, value) -> System.out.println("Element: " + key + " " + "Index: " + value));
+        graphObject.forEach((key, value) -> System.out.println("Vertex " + key + " " + "Edge to: " + value));
+
     }
 }
