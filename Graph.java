@@ -1,3 +1,8 @@
+
+/**
+ * Authors: Jiman Kim, Jack Riley
+ */
+
 import java.util.List;
 import java.util.Set;
 import java.util.ArrayList;
@@ -148,6 +153,9 @@ public class Graph<V> implements GraphIfc<V> {
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
     public int degree(V v) {
+        if (!containsVertex(v)) {
+            throw new IllegalArgumentException();
+        }
         return graphObject.get(v).size();
     }
 
