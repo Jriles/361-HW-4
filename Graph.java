@@ -6,114 +6,129 @@ import java.util.Map;
 import java.util.HashSet;
 
 public class Graph<V> implements GraphIfc<V> {
-    protected Map<V, List<V>> graphObject = new HashMap<V, List<V>>();
+    protected Map<V, List<V>> graphObject;
+
+    public Graph(V vertex) {
+        this.vertex = vertex;
+        graphObject = new HashMap<>();
+    }
+
     /**
      * Returns the number of vertices in the graph
+     * 
      * @return The number of vertices in the graph
      */
-    public int numVertices(){
+    public int numVertices() {
         return graphObject.size();
     }
 
     /**
      * Returns the number of edges in the graph
-
+     * 
      * @return The number of edges in the graph
      */
-    public int numEdges(){
+    public int numEdges() {
         return -1;
     }
 
     /**
      * Removes all vertices from the graph
      */
-    public void clear(){
-        //bla
+    public void clear() {
+        // bla
     }
 
     /**
-     * Adds a vertex to the graph. This method has no effect if the vertex already exists in the graph.
+     * Adds a vertex to the graph. This method has no effect if the vertex already
+     * exists in the graph.
+     * 
      * @param v The vertex to be added
      */
-    public void addVertex(V v){
-        //need to check if this vertext already exists in the graph
-        //graphObject.put(v, new List<v>);
+    public void addVertex(V v) {
+        // need to check if this vertext already exists in the graph
+        // graphObject.put(v, new List<v>);
     }
 
     /**
      * Adds an edge between vertices u and v in the graph.
+     * 
      * @param u A vertex in the graph
      * @param v A vertex in the graph
-     * @throws IllegalArgumentException if either vertex does not occur in the graph.
+     * @throws IllegalArgumentException if either vertex does not occur in the
+     *                                  graph.
      */
-    public void addEdge(V u, V v){
+    public void addEdge(V u, V v) {
 
     }
 
     /**
      * Returns the set of all vertices in the graph.
+     * 
      * @return A set containing all vertices in the graph
      */
 
-    public Set<V> getVertices(){
+    public Set<V> getVertices() {
         Set<V> vertSet = new HashSet<V>();
         return vertSet;
     }
 
     /**
-     * Returns the neighbors of v in the graph. A neighbor is a vertex that is connected to
-     * v by an edge. If the graph is directed, this returns the vertices u for which an
-     * edge (v, u) exists.
+     * Returns the neighbors of v in the graph. A neighbor is a vertex that is
+     * connected to v by an edge. If the graph is directed, this returns the
+     * vertices u for which an edge (v, u) exists.
      *
      * @param v An existing node in the graph
      * @return All neighbors of v in the graph.
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
-    public List<V> getNeighbors(V v){
-        //List<V> neighborList = new List<V>();
-        //return neighborList;
+    public List<V> getNeighbors(V v) {
+        // List<V> neighborList = new List<V>();
+        // return neighborList;
     }
 
     /**
-     * Determines whether the given vertex is already contained in the graph. The comparison
-     * is based on the <code>equals()</code> method in the class V.
+     * Determines whether the given vertex is already contained in the graph. The
+     * comparison is based on the <code>equals()</code> method in the class V.
      *
      * @param v The vertex to be tested.
      * @return True if v exists in the graph, false otherwise.
      */
-    public boolean containsVertex(V v){
+    public boolean containsVertex(V v) {
         return true;
     }
 
     /**
      * Determines whether an edge exists between two vertices. In a directed graph,
      * this returns true only if the edge starts at v and ends at u.
+     * 
      * @param v A node in the graph
      * @param u A node in the graph
      * @return True if an edge exists between the two vertices
      * @throws IllegalArgumentException if either vertex does not occur in the graph
      */
-    public boolean edgeExists(V v, V u){
+    public boolean edgeExists(V v, V u) {
         return true;
     }
 
     /**
-     * Returns the degree of the vertex. In a directed graph, this returns the outdegree of the
-     * vertex.
+     * Returns the degree of the vertex. In a directed graph, this returns the
+     * outdegree of the vertex.
+     * 
      * @param v A vertex in the graph
      * @return The degree of the vertex
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
-    public int degree(V v){
+    public int degree(V v) {
         return 0;
     }
 
     /**
-     * Returns a string representation of the graph. The string representation shows all
-     * vertices and edges in the graph.
+     * Returns a string representation of the graph. The string representation shows
+     * all vertices and edges in the graph.
+     * 
      * @return A string representation of the graph
      */
-    public String toString(){
-        return "";
+    public String toString() {
+        return test.forEach((key, value) -> System.out.println("Element: " + key + " " + "Index: " + value));
     }
 }
