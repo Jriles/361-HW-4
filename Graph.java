@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.HashSet;
+import java.util.LinkedList;
 
 public class Graph<V> implements GraphIfc<V> {
     protected Map<V, List<V>> graphObject;
@@ -45,7 +46,7 @@ public class Graph<V> implements GraphIfc<V> {
      */
     public void addVertex(V v) {
         // need to check if this vertext already exists in the graph
-        List<V> connList = new ArrayList<>();
+        List<V> connList = new LinkedList<>();
         graphObject.put(v, connList);
     }
 
@@ -129,6 +130,10 @@ public class Graph<V> implements GraphIfc<V> {
      * @return A string representation of the graph
      */
     public String toString() {
-        return test.forEach((key, value) -> System.out.println("Element: " + key + " " + "Index: " + value));
+        return "";
+    }
+
+    public void printMap() {
+        graphObject.forEach((key, value) -> System.out.println("Element: " + key + " " + "Index: " + value));
     }
 }
