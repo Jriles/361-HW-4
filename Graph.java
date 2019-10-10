@@ -71,7 +71,6 @@ public class Graph<V> implements GraphIfc<V> {
         } else {
             graphObject.get(u).add(v);
         }
-
     }
 
     /**
@@ -98,6 +97,9 @@ public class Graph<V> implements GraphIfc<V> {
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
     public List<V> getNeighbors(V v) {
+        if(containsVertex(v) == false){
+            throw new IllegalArgumentException("vertex does not exist");
+        }
         return graphObject.get(v);
     }
 
@@ -146,7 +148,7 @@ public class Graph<V> implements GraphIfc<V> {
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
     public int degree(V v) {
-        return 0;
+        return graphObject.get(v).size();
     }
 
     /**
