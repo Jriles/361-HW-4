@@ -8,8 +8,7 @@ import java.util.HashSet;
 public class Graph<V> implements GraphIfc<V> {
     protected Map<V, List<V>> graphObject;
 
-    public Graph(V vertex) {
-        this.vertex = vertex;
+    public Graph() {
         graphObject = new HashMap<>();
     }
 
