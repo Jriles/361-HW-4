@@ -15,6 +15,7 @@ public class Main {
         g.addVertex(2);
         g.addVertex(5);
         g.addEdge(2, 5);
+        System.out.println(g.getNeighbors(1));
         g.printMap();
 
         // Graph<String> newGraph = new Graph<String>();
