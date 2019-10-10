@@ -24,7 +24,7 @@ public class Main {
         g.addEdge(1, 5);
         g.edgeExists(2, 5);
         g.edgeExists(5, 2);
-        g.printMap();
+        System.out.println(g.toString());
 
         // Graph<String> newGraph = new Graph<String>();
         // String myString = "Yeet";

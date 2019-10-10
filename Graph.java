@@ -97,7 +97,7 @@ public class Graph<V> implements GraphIfc<V> {
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
     public List<V> getNeighbors(V v) {
-        if(containsVertex(v) == false){
+        if (containsVertex(v) == false) {
             throw new IllegalArgumentException("vertex does not exist");
         }
         return graphObject.get(v);
@@ -158,11 +158,6 @@ public class Graph<V> implements GraphIfc<V> {
      * @return A string representation of the graph
      */
     public String toString() {
-        return "";
-    }
-
-    public void printMap() {
-        graphObject.forEach((key, value) -> System.out.println("Vertex " + key + " " + "Edge to: " + value));
-
+        return graphObject.toString();
     }
 }
