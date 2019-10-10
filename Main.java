@@ -12,9 +12,18 @@ public class Main {
         // list1.add(i);
         // }
         Graph<Integer> g = new Graph<Integer>();
+        g.addVertex(1);
         g.addVertex(2);
+        g.addVertex(3);
+        g.addVertex(4);
         g.addVertex(5);
+        g.addVertex(6);
         g.addEdge(2, 5);
+        g.addEdge(2, 1);
+        g.addEdge(1, 2);
+        g.addEdge(1, 5);
+        g.edgeExists(2, 5);
+        g.edgeExists(5, 2);
         g.printMap();
 
         // Graph<String> newGraph = new Graph<String>();
