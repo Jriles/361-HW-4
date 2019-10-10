@@ -75,8 +75,7 @@ public class Graph<V> implements GraphIfc<V> {
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
     public List<V> getNeighbors(V v){
-        List<V> list = new ArrayList<>();
-        return list;
+        return graphObject.get(v);
     }
 
     /**
