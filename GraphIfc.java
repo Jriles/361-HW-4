@@ -15,6 +15,7 @@ public interface GraphIfc<V> {
 		
 	/**
 	 * Returns the number of edges in the graph
+
 	 * @return The number of edges in the graph
 	 */
 	public int numEdges();	
@@ -42,6 +43,7 @@ public interface GraphIfc<V> {
 	 * Returns the set of all vertices in the graph.
 	 * @return A set containing all vertices in the graph
 	 */
+
 	public Set<V> getVertices();
 	
 	/**
