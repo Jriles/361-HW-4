@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e00989a-359e-4100-b2da-ad64a4ca65ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,58 +13,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/GraphIfc.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Graph.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/GraphIfc.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="631">
-                  <caret line="92" column="29" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="92" selection-end-column="29" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GraphIfc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Graph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="631">
+              <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
+              <folding>
+                <element signature="e#255#256#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#2251#2252#0" expanded="true" />
+                <element signature="e#2277#2278#0" expanded="true" />
+                <element signature="e#2709#2710#0" expanded="true" />
+                <element signature="e#2736#2737#0" expanded="true" />
+                <element signature="e#3052#3053#0" expanded="true" />
+                <element signature="e#3075#3076#0" expanded="true" />
+                <element signature="e#3296#3297#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,6 +69,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/GraphIfc.java" />
+        <option value="$PROJECT_DIR$/Main.java" />
         <option value="$PROJECT_DIR$/Graph.java" />
       </list>
     </option>
@@ -104,7 +103,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570665572236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570667165330" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -132,12 +131,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570648674435</updated>
-      <workItem from="1570648676095" duration="8951000" />
+      <workItem from="1570648676095" duration="10381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8951000" />
+    <option name="totallyTimeSpent" value="10381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1653" height="896" extended-state="6" />
@@ -180,13 +179,6 @@
     <entry file="file://$PROJECT_DIR$/Vertex.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphIfc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -197,10 +189,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="631">
+          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
+          <folding>
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2277#2278#0" expanded="true" />
+            <element signature="e#2709#2710#0" expanded="true" />
+            <element signature="e#2736#2737#0" expanded="true" />
+            <element signature="e#3052#3053#0" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
+            <element signature="e#3296#3297#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

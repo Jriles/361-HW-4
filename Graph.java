@@ -1,12 +1,11 @@
 public class Graph<V> implements GraphIfc<V> {
     Map<V, List<V>> graphObject = new HashMap<V, List<V>>();
-
     /**
      * Returns the number of vertices in the graph
      * @return The number of vertices in the graph
      */
     public int numVertices(){
-        
+        return graphObject.size();
     }
 
     /**
@@ -14,18 +13,25 @@ public class Graph<V> implements GraphIfc<V> {
 
      * @return The number of edges in the graph
      */
-    public int numEdges();
+    public int numEdges(){
+        return -1;
+    }
 
     /**
      * Removes all vertices from the graph
      */
-    public void clear();
+    public void clear(){
+        //bla
+    }
 
     /**
      * Adds a vertex to the graph. This method has no effect if the vertex already exists in the graph.
      * @param v The vertex to be added
      */
-    public void addVertex(V v);
+    public void addVertex(V v){
+        //need to check if this vertext already exists in the graph
+        graphObject.put(v, new List<v>);
+    }
 
     /**
      * Adds an edge between vertices u and v in the graph.
@@ -33,14 +39,19 @@ public class Graph<V> implements GraphIfc<V> {
      * @param v A vertex in the graph
      * @throws IllegalArgumentException if either vertex does not occur in the graph.
      */
-    public void addEdge(V u, V v);
+    public void addEdge(V u, V v){
+
+    }
 
     /**
      * Returns the set of all vertices in the graph.
      * @return A set containing all vertices in the graph
      */
 
-    public Set<V> getVertices();
+    public Set<V> getVertices(){
+        Set<V> vertSet = new HashSet<V>();
+        return vertSet;
+    }
 
     /**
      * Returns the neighbors of v in the graph. A neighbor is a vertex that is connected to
@@ -51,7 +62,10 @@ public class Graph<V> implements GraphIfc<V> {
      * @return All neighbors of v in the graph.
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
-    public List<V> getNeighbors(V v);
+    public List<V> getNeighbors(V v){
+        List<V> neighborList = new List<V>();
+        return neighborList;
+    }
 
     /**
      * Determines whether the given vertex is already contained in the graph. The comparison
@@ -60,7 +74,9 @@ public class Graph<V> implements GraphIfc<V> {
      * @param v The vertex to be tested.
      * @return True if v exists in the graph, false otherwise.
      */
-    public boolean containsVertex(V v);
+    public boolean containsVertex(V v){
+        return true;
+    }
 
     /**
      * Determines whether an edge exists between two vertices. In a directed graph,
@@ -70,7 +86,9 @@ public class Graph<V> implements GraphIfc<V> {
      * @return True if an edge exists between the two vertices
      * @throws IllegalArgumentException if either vertex does not occur in the graph
      */
-    public boolean edgeExists(V v, V u);
+    public boolean edgeExists(V v, V u){
+        return true;
+    }
 
     /**
      * Returns the degree of the vertex. In a directed graph, this returns the outdegree of the
@@ -79,13 +97,17 @@ public class Graph<V> implements GraphIfc<V> {
      * @return The degree of the vertex
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
-    public int degree(V v);
+    public int degree(V v){
+        return 0;
+    }
 
     /**
      * Returns a string representation of the graph. The string representation shows all
      * vertices and edges in the graph.
      * @return A string representation of the graph
      */
-    public String toString();
+    public String toString(){
+        return "";
+    }
 }
 
