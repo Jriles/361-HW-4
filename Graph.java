@@ -27,9 +27,9 @@ public class Graph<V> implements GraphIfc<V> {
      * 
      * @return The number of edges in the graph
      */
-    public int numEdges(){
+    public int numEdges() {
         int edgeCount = 0;
-        for(Map.Entry<V, List<V>> entry : graphObject.entrySet()) {
+        for (Map.Entry<V, List<V>> entry : graphObject.entrySet()) {
             edgeCount += entry.getValue().size();
         }
         return edgeCount;
@@ -50,7 +50,7 @@ public class Graph<V> implements GraphIfc<V> {
      * @param v The vertex to be added
      */
     public void addVertex(V v) {
-        if(containsVertex(v) == false) {
+        if (containsVertex(v) == false) {
             // need to check if this vertext already exists in the graph
             List<V> connList = new LinkedList<>();
             graphObject.put(v, connList);
@@ -66,10 +66,11 @@ public class Graph<V> implements GraphIfc<V> {
      *                                  graph.
      */
     public void addEdge(V u, V v) {
-        if(containsVertex(u) == false || containsVertex(v) == false){
-            throw new IllegalArgumentException("one or more vertices do not exist");
+        if (!containsVertex(u) || !containsVertex(v)) {
+            throw IllegalArgumentException;
+        } else {
+            graphObject.get(u).add(v);
         }
-        graphObject.get(u).add(v);
     }
 
     /**
@@ -110,7 +111,7 @@ public class Graph<V> implements GraphIfc<V> {
      * @return True if v exists in the graph, false otherwise.
      */
     public boolean containsVertex(V v) {
-        if(graphObject.get(v) == null){
+        if (graphObject.get(v) == null) {
             return false;
         }
         return true;
