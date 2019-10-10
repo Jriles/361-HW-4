@@ -17,5 +17,7 @@ public class Main {
         test.put("a", list1);
         test.forEach((key, value) -> System.out.println("Element: " + key + " " + "
         Index: " + value));
+        Graph<String> newGraph = new Graph<String>();
+
     }
 }

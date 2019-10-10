@@ -46,7 +46,8 @@ public class Graph<V> implements GraphIfc<V> {
      */
     public void addVertex(V v) {
         // need to check if this vertext already exists in the graph
-        // graphObject.put(v, new List<v>);
+        List<V> connList = new ArrayList<>();
+        graphObject.put(v, connList);
     }
 
     /**
@@ -82,8 +83,8 @@ public class Graph<V> implements GraphIfc<V> {
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
     public List<V> getNeighbors(V v) {
-        // List<V> neighborList = new List<V>();
-        // return neighborList;
+        List<V> list = new ArrayList<>();
+        return list;
     }
 
     /**
