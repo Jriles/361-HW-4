@@ -50,9 +50,11 @@ public class Graph<V> implements GraphIfc<V> {
      * @param v The vertex to be added
      */
     public void addVertex(V v) {
-        // need to check if this vertext already exists in the graph
-        List<V> connList = new LinkedList<>();
-        graphObject.put(v, connList);
+        if(containsVertex(v) == false) {
+            // need to check if this vertext already exists in the graph
+            List<V> connList = new LinkedList<>();
+            graphObject.put(v, connList);
+        }
     }
 
     /**
