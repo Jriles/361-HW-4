@@ -102,6 +102,9 @@ public class Graph<V> implements GraphIfc<V> {
      * @return True if v exists in the graph, false otherwise.
      */
     public boolean containsVertex(V v) {
+        if(graphObject.get(v) == null){
+            return false;
+        }
         return true;
     }
 

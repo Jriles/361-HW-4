@@ -19,12 +19,7 @@ public class Main {
         Graph<String> newGraph = new Graph<String>();
         String myString = "Yeet";
         newGraph.addVertex(myString);
-<<<<<<< HEAD
         //newGraph.clear();
-        System.out.print(newGraph.numEdges());
-=======
-        // newGraph.clear();
-        System.out.print(newGraph.getVertices().toString());
->>>>>>> 5d2546acc1e1784f78e95fe0c6333c0abdc06d57
+        System.out.print(newGraph.containsVertex("Yet"));
     }
 }
