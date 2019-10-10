@@ -16,5 +16,10 @@ public class Main {
         g.addVertex(5);
         g.printMap();
 
+        Graph<String> newGraph = new Graph<String>();
+        String myString = "Yeet";
+        newGraph.addVertex(myString);
+        // newGraph.clear();
+        System.out.print(newGraph.getVertices().toString());
     }
 }

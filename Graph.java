@@ -36,6 +36,7 @@ public class Graph<V> implements GraphIfc<V> {
      */
     public void clear() {
         // bla
+        graphObject.clear();
     }
 
     /**
@@ -70,6 +71,9 @@ public class Graph<V> implements GraphIfc<V> {
 
     public Set<V> getVertices() {
         Set<V> vertSet = new HashSet<V>();
+        for (Map.Entry<V, List<V>> entry : graphObject.entrySet()) {
+            vertSet.add(entry.getKey());
+        }
         return vertSet;
     }
 
@@ -83,8 +87,7 @@ public class Graph<V> implements GraphIfc<V> {
      * @throws IllegalArgumentException if the vertex does not occur in the graph
      */
     public List<V> getNeighbors(V v) {
-        List<V> list = new ArrayList<>();
-        return list;
+        return graphObject.get(v);
     }
 
     /**
