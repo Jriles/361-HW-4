@@ -10,6 +10,6 @@ public class Main {
         String myString = "Yeet";
         newGraph.addVertex(myString);
         //newGraph.clear();
-        System.out.print(newGraph.getVertices().toString());
+        System.out.print(newGraph.numEdges());
     }
 }

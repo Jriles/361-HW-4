@@ -21,7 +21,11 @@ public class Graph<V> implements GraphIfc<V> {
      * @return The number of edges in the graph
      */
     public int numEdges(){
-        return -1;
+        int edgeCount = 0;
+        for(Map.Entry<V, List<V>> entry : graphObject.entrySet()) {
+            edgeCount += entry.getValue().size();
+        }
+        return edgeCount;
     }
 
     /**
