@@ -29,6 +29,7 @@ public class Graph<V> implements GraphIfc<V> {
      */
     public void clear(){
         //bla
+        graphObject.clear();
     }
 
     /**
@@ -58,6 +59,9 @@ public class Graph<V> implements GraphIfc<V> {
 
     public Set<V> getVertices(){
         Set<V> vertSet = new HashSet<V>();
+        for(Map.Entry<V, List<V>> entry : graphObject.entrySet()) {
+            vertSet.add(entry.getKey());
+        }
         return vertSet;
     }
 
